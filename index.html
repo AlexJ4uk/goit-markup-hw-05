@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  
   <body>
     <header class="page-header">
       <div class="container header-container">
@@ -50,6 +51,7 @@
         </address>
       </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="container">
@@ -435,6 +437,7 @@
         </div>
       </section>
     </main>
+
     <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-content">
@@ -475,7 +478,44 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="footer-form">
+            <label aria-label="footer-email" class="footer-label">
+              <div class="footer-input-btn">
+                <input
+                  class="footer-input"
+                  type="email"
+                  name="footer-email"
+                  id="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="footer-btn">
+                Subscribe<svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Frame-3"></use>
+                </svg>
+              </button>
+              </div>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop is-open">
+      <div class="modal">
+          <button class="modal-close-btn" type="button">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+<p class="modal-title">Leave your contacts and we will call you back</p>
+    <form class="modal-form">
+      <input type="text" class="modal-input" name="name">
+      <input type="text" class="modal-input" name="phone">
+      <input type="text" class="modal-input" name="email">
+    </form>
+</div>
+  </div>
   </body>
 </html>
