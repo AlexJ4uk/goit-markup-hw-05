@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  
+
   <body>
     <header class="page-header">
       <div class="container header-container">
@@ -511,9 +511,10 @@
           </button>
 <p class="modal-title">Leave your contacts and we will call you back</p>
     <form class="modal-form">
-      <input type="text" class="modal-input" name="name">
-      <input type="text" class="modal-input" name="phone">
-      <input type="text" class="modal-input" name="email">
+      <label for="name">Name</label><input type="text" class="modal-input" name="name" id="name" required >
+      <label for="tel">Phone</label><input type="tel" class="modal-input" name="tel" id="tel" required >
+      <label for="email">Email</label><input type="email" class="modal-input" name="email" id="email" required >
+      <button type="submit" class="modal-btn">Send</button>
     </form>
 </div>
   </div>
